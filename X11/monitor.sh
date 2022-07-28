@@ -1,0 +1,2 @@
+#!/bin/sh
+xrandr --output Virtual-1 --primary --mode 1920x1200_60.00 --pos 0x0 --rotate normal --output Virtual-2 --off --output Virtual-3 --off --output Virtual-4 --off --output Virtual-5 --off --output Virtual-6 --off --output Virtual-7 --off --output Virtual-8 --off --output Virtual-9 --off --output Virtual-10 --off --output Virtual-11 --off --output Virtual-12 --off --output Virtual-13 --off --output Virtual-14 --off --output Virtual-15 --off --output Virtual-16 --off

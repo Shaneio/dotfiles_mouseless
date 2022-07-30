@@ -1,0 +1,14 @@
+alias ll='exa -lah --git'
+alias lt='exa -lah --git --tree'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+
+alias ezrc="$EDITOR ~/.config/zsh/.zshrc"
+alias szrc="source ~/.config/zsh/.zshrc"
+alias ezev="$EDITOR ~/.config/zsh/.zshenv"
+alias envm="$EDITOR ~/.config/nvim/init.vim"
+alias exrs="$EDITOR ~/.config/X11/.Xresources"
+
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index

@@ -27,6 +27,13 @@ then
     pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
+ftmuxp
+
+# Clearing the shell changed to CTRL+g
+bindkey -r '^l'
+bindkey -r '^g'
+bindkey -s '^g' 'clear\n'
+
 # VI like settings
 
 bindkey -v

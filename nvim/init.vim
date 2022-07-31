@@ -48,3 +48,8 @@ augroup END
 
 " Config for Winresizer
 let g:winresizer_start_key = "<leader>w"
+
+" Config for fzf.vim
+nnoremap <leader>f :Files<cr>
+
+nnoremap <c-w>h <c-w>s

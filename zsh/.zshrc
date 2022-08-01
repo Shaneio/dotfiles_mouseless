@@ -27,7 +27,6 @@ then
     pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
-ftmuxp
 
 # Clearing the shell changed to CTRL+g
 bindkey -r '^l'
@@ -40,6 +39,8 @@ bindkey -v
 export KEYTIMEOUT=1
 
 source $DOTFILES/zsh/scripts.sh
+
+ftmuxp
 
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
@@ -56,6 +57,8 @@ autoload -Uz cursor_mode && cursor_mode
 source ~/.dotfiles/zsh/external/bd.zsh
 
 autoload -Uz prompt_purification_setup; prompt_purification_setup
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz compinit; compinit
 _comp_options+=(globdots) # completes hidden files

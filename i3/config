@@ -313,7 +313,7 @@ for_window [class="URxvt*"] border pixel 1
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
 exec urxvtc -name urxvt_scratchpad \
--e tmux new-session -d -s scratchpad \; \
+-e tmux -2 new-session -d -s scratchpad \; \
 new-window -n nvim 'nvim +e /tmp/nvim-tmp.md' \; \
 attach-session -d -t scratchpad
 
@@ -365,4 +365,12 @@ mode "$mode_display" {
 }
 bindsym $mod+x mode "$mode_display"
 
+#----------------------------------------
+# Other Stuff
+#----------------------------------------
+
+# Load Dunst - notification programme
 exec --no-startup-id dunst
+
+# Remap Caps Lock key when external keyboard is plugged
+# bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape' &"
